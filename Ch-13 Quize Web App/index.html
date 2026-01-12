@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App UI</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .quiz-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .quiz-container h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        label:hover {
+            border-color: #667eea;
+            background: #f5f6ff;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px; 
+            accent-color: #667eea;
+        }
+
+        .next-btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #667eea;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .next-btn:hover {
+            background: #5a67d8;
+        }
+
+        #timer {
+            text-align: end;
+        }
+
+        @media (max-width: 480px) {
+            .quiz-container {
+                padding: 20px;
+            }
+
+            .quiz-container h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="quiz-container">  
+        <p id="timer">00:60</p>
+        <h3 id="index">01</h3>
+        <h3 id="question">What is the capital of France?</h3>
+
+        <ul>
+            <li>
+                <label>
+                    <input type="radio" name="answer">
+                    <span> Paris</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answer">
+                    <span> London</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answer">
+                    <span>Rome</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answer">
+                    <span> Berlin</span>
+                </label>
+            </li>
+        </ul>
+
+        <button id="nextBtn" class="next-btn">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
