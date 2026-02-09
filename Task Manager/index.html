@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>E-Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Home  -->
+        <section id="home">
+            <h2>Welcome to E-Commerce</h2>
+        </section>
+
+        <!-- shop  -->
+        <section id="shop">
+            <h2> Add Product</h2>
+            <input type="text" id="name" placeholder="Product Name">
+            <input type="number" id="price" placeholder="Price">
+            <button>Add</button>
+
+            <h3>Product List</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="productList"></tbody>
+            </table>
+        </section>
+
+        <!-- update  -->
+        <section id="update">
+            <h2>Update First Product</h2>
+            <button>Update price</button>
+        </section>
+
+        <!-- delete  -->
+        <section id="delete">
+            <h2>Delete Product</h2>
+            <button>Delete</button>
+        </section>
+
+        <!-- login  -->
+        <section id="login">
+            <h2>Login page</h2>
+
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
